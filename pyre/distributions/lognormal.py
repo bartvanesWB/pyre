@@ -62,7 +62,7 @@ class Lognormal(Distribution):
     """cumulative distribution function
     """
     z = ( np.log(x) - lamb ) * zeta**(-1)
-    P = 0.5+math.erf(z*np.sqrt(2)**(-1))*2**(-1)
+    P = 0.5+spec.erf(z*np.sqrt(2)**(-1))*2**(-1)
     return P
 
   @classmethod

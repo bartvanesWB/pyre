@@ -44,7 +44,7 @@ class Normal(Distribution):
   def cdf(self,x,mean=None,stdv=None,var_3=None,var_4=None):
     """cumulative distribution function
     """
-    P = 0.5+math.erf(((x-mean)*stdv**(-1))*np.sqrt(2)**(-1))*2**(-1)
+    P = 0.5+spec.erf(((x-mean)*stdv**(-1))*np.sqrt(2)**(-1))*2**(-1)
     return P
 
   @classmethod
